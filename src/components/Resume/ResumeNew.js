@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
+import Screenshot from "../../Assets/Screenshot (93).png";
 import pdf from "../../Assets/Arun_Kumar_Pulapa.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -33,7 +34,8 @@ function ResumeNew() {
 
         <Row className="resume">
           <Document file={pdf}   className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 100 ? 2 : 0.6} />
+            {/* <Page pageNumber={1} scale={width > 100 ? 0.7 : 0.6} /> */}
+            <img src={Screenshot} alt=""/>
           </Document>
         </Row>
 

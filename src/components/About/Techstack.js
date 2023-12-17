@@ -14,6 +14,12 @@ import {
   DiBootstrap,
   DiCss3,
   DiIonic,
+  DiPhp,
+  DiCreativecommonsBadge,
+  DiAndroid,
+  DiCisco,
+  DiApple,
+  DiWindows,
 } from "react-icons/di";
 import {
   SiRedis,
@@ -22,7 +28,7 @@ import {
   SiSolidity,
   SiPostgresql,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { TbBrandGolang, TbDeviceWatchMinus } from "react-icons/tb";
 
 function Techstack() {
   return (
@@ -62,7 +68,16 @@ function Techstack() {
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <DiPhp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiAndroid />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiApple />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiWindows />
       </Col>
     </Row>
   );
